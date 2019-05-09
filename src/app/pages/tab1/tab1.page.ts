@@ -38,11 +38,9 @@ export class Tab1Page {
         {
           text: 'Crear',
           handler: ( data ) => {
-            console.log(data);
             if ( data.titulo.length === 0 ) {
               return;
             }
-
 
             const listaId = this.deseosService.crearLista( data.titulo );
 
@@ -55,5 +53,7 @@ export class Tab1Page {
     await alert.present();
 
   }
+
+
 
 }
